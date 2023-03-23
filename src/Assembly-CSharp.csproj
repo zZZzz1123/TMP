@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net35</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy C:\Users\SchoolBouy\Desktop\Mod\PC-GO-118v1\src\bin\Debug\net35\Assembly-CSharp.dll C:\Users\SchoolBouy\Desktop\Mod\PC-GO-118v1\HTTH_Go_118v1\Haitac_118_pc_Data\Managed /Y" />
+  </Target>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>..\HTTH_Go_118v1\Haitac_118_pc_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>..\HTTH_Go_118v1\Haitac_118_pc_Data\Managed\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\HTTH_Go_118v1\Haitac_118_pc_Data\Managed\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\HTTH_Go_118v1\Haitac_118_pc_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
